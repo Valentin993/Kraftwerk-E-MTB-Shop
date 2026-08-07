@@ -6,16 +6,29 @@ import {
   ConfiguratorOption
 } from '../types';
 
-export const HERO_IMAGE = '/src/assets/images/hero_bike_sunrise_1786107678834.jpg';
-export const FRAME_TECH_IMAGE = '/src/assets/images/frame_tech_detail_1786107692948.jpg';
-export const BERLIN_HQ_IMAGE = '/src/assets/images/berlin_hq_studio_1786107706494.jpg';
-export const BATTERY_TECH_IMAGE = '/src/assets/images/integrated_battery_tech_1786108989809.jpg';
-export const OLED_COCKPIT_IMAGE = '/src/assets/images/oled_cockpit_display_1786109090026.jpg';
-export const SUSPENSION_TECH_IMAGE = '/src/assets/images/dual_active_suspension_1786109195938.jpg';
-export const TOPO_GPS_IMAGE = '/src/assets/images/topo_gps_navigation_1786109256522.jpg';
-export const MOBILE_APP_IMAGE = '/src/assets/images/kraft_mobile_app_interface_1786109336705.jpg';
-export const BRANDENBURG_ROCK_IMAGE = '/src/assets/images/brandenburg_rock_garden_1786109413223.jpg';
-export const SUNSET_BERM_IMAGE = '/src/assets/images/sunset_berm_carve_1786109500928.jpg';
+import HERO_IMAGE from '../assets/images/hero_bike_sunrise_1786107678834.jpg';
+import FRAME_TECH_IMAGE from '../assets/images/frame_tech_detail_1786107692948.jpg';
+import BERLIN_HQ_IMAGE from '../assets/images/berlin_hq_studio_1786107706494.jpg';
+import BATTERY_TECH_IMAGE from '../assets/images/integrated_battery_tech_1786108989809.jpg';
+import OLED_COCKPIT_IMAGE from '../assets/images/oled_cockpit_display_1786109090026.jpg';
+import SUSPENSION_TECH_IMAGE from '../assets/images/dual_active_suspension_1786109195938.jpg';
+import TOPO_GPS_IMAGE from '../assets/images/topo_gps_navigation_1786109256522.jpg';
+import MOBILE_APP_IMAGE from '../assets/images/kraft_mobile_app_interface_1786109336705.jpg';
+import BRANDENBURG_ROCK_IMAGE from '../assets/images/brandenburg_rock_garden_1786109413223.jpg';
+import SUNSET_BERM_IMAGE from '../assets/images/sunset_berm_carve_1786109500928.jpg';
+
+export {
+  HERO_IMAGE,
+  FRAME_TECH_IMAGE,
+  BERLIN_HQ_IMAGE,
+  BATTERY_TECH_IMAGE,
+  OLED_COCKPIT_IMAGE,
+  SUSPENSION_TECH_IMAGE,
+  TOPO_GPS_IMAGE,
+  MOBILE_APP_IMAGE,
+  BRANDENBURG_ROCK_IMAGE,
+  SUNSET_BERM_IMAGE
+};
 
 export const BRAND_NAME = 'KRAFTWERK®';
 export const MODEL_NAME = 'KRAFT01 / E-PERFORMANCE';
