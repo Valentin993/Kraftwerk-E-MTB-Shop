@@ -1,0 +1,6 @@
+{
+  "name": "KRAFTWERK E-MTB",
+  "description": "Awwwards-quality landing page for Berlin's flagship full-suspension electric mountain bike.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
