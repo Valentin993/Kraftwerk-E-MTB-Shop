@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Volume2, VolumeX, Menu, X, Compass, ChevronRight, Globe } from 'lucide-react';
-import { ambientAudio } from '../utils/audioSynth';
+import { Menu, X, Compass, ChevronRight } from 'lucide-react';
 
 interface NavbarProps {
   onOpenTestRide: () => void;
@@ -18,7 +17,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [audioActive, setAudioActive] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [berlinTime, setBerlinTime] = useState('');
 
@@ -52,11 +50,6 @@ export const Navbar: React.FC<NavbarProps> = ({
     };
   }, []);
 
-  const handleAudioToggle = () => {
-    const active = ambientAudio.toggle();
-    setAudioActive(active);
-  };
-
   const navLinks = [
     { name: 'Overview', href: '#hero' },
     { name: 'About', href: '#about' },
@@ -85,7 +78,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             : 'py-6 bg-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        <div className="w-full px-4 sm:px-6 lg:px-10 flex items-center justify-between">
           {/* Brand Logo & Berlin Live Stamp */}
           <a href="#hero" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-xl bg-lime-accent text-black flex items-center justify-center font-bold text-lg font-display tracking-tighter shadow-lime-glow group-hover:scale-105 transition-transform">
@@ -117,36 +110,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Actions & Controls */}
           <div className="hidden sm:flex items-center gap-3">
-            {/* Currency Selector */}
-            <div className="relative flex items-center bg-white/5 border border-white/10 rounded-full px-2.5 py-1 text-xs text-slate-300">
-              <Globe className="w-3.5 h-3.5 mr-1.5 text-slate-400" />
-              {(['EUR', 'USD', 'GBP'] as const).map((c) => (
-                <button
-                  key={c}
-                  onClick={() => setCurrency(c)}
-                  className={`px-1.5 py-0.5 rounded text-[11px] font-tech font-medium transition-colors ${
-                    currency === c ? 'bg-lime-accent text-black font-bold' : 'hover:text-white text-slate-400'
-                  }`}
-                >
-                  {c === 'EUR' ? '€' : c === 'USD' ? '$' : '£'}
-                </button>
-              ))}
-            </div>
-
-            {/* Ambient Sound Toggle */}
-            <button
-              onClick={handleAudioToggle}
-              data-cursor="SOUND"
-              className={`p-2 rounded-full border transition-all ${
-                audioActive
-                  ? 'bg-lime-accent/20 border-lime-accent text-lime-accent shadow-lime-glow'
-                  : 'bg-white/5 border-white/10 text-slate-400 hover:text-white'
-              }`}
-              title={audioActive ? 'Mute Ambient Mountain Atmosphere' : 'Enable Ambient Mountain Atmosphere'}
-            >
-              {audioActive ? <Volume2 className="w-4 h-4 animate-bounce" /> : <VolumeX className="w-4 h-4" />}
-            </button>
-
             {/* Test Ride Modal Trigger */}
             <button
               onClick={onOpenTestRide}

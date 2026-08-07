@@ -55,7 +55,7 @@ export const SpecificationsSection: React.FC<SpecificationsSectionProps> = ({
               <div className="relative z-10 text-center space-y-4">
                 <span className="text-xs font-tech text-lime-accent uppercase tracking-widest">{MODEL_NAME}</span>
                 <h3 className="text-3xl font-extrabold text-white font-display">{selectedColor.name}</h3>
-                <p className="text-xs text-slate-400 max-w-md">{selectedColor.description}</p>
+                <p className="text-xs text-slate-400 max-w-md mx-auto text-center">{selectedColor.description}</p>
 
                 {/* Bike Render Graphic Placeholder Badge */}
                 <div className="mt-6 inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/10 border border-white/15 text-xs font-tech font-bold text-slate-200">

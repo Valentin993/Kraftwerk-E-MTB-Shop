@@ -246,7 +246,7 @@ export const FULL_SPECIFICATIONS: BikeSpecItem[] = [
 export const COLOR_OPTIONS: ConfiguratorOption[] = [
   { id: 'stealth', name: 'Matte Stealth Black', colorCode: '#121316', priceDelta: 0, description: 'Aggressive anti-reflective matte finish inspired by stealth aircraft' },
   { id: 'forest', name: 'Deep Forest Graphite', colorCode: '#1A2922', priceDelta: 150, description: 'Deep dark olive hue inspired by Berlin’s Grunewald pine forest' },
-  { id: 'lime', name: 'Electric Berlin Launch Edition', colorCode: '#2B331A', priceDelta: 360, description: 'Matte carbon with vibrant Electric Lime (#A3E635) badging & pinstripes' }
+  { id: 'lime', name: 'Electric Berlin Launch Edition', colorCode: '#2B331A', priceDelta: 360, description: 'Matte carbon with vibrant Electric Lime badging & pinstripes' }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
