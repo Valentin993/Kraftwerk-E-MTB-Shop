@@ -7,15 +7,17 @@ import {
 } from '../types';
 
 import HERO_IMAGE from '../assets/images/hero_bike_sunrise_1786107678834.jpg';
-import FRAME_TECH_IMAGE from '../assets/images/frame_tech_detail_1786107692948.jpg';
+import FRAME_TECH_IMAGE from '../assets/images/kraft_01_frame_detail_1786134113106.jpg';
 import BERLIN_HQ_IMAGE from '../assets/images/berlin_hq_studio_1786107706494.jpg';
 import BATTERY_TECH_IMAGE from '../assets/images/integrated_battery_tech_1786108989809.jpg';
 import OLED_COCKPIT_IMAGE from '../assets/images/oled_cockpit_display_1786109090026.jpg';
 import SUSPENSION_TECH_IMAGE from '../assets/images/dual_active_suspension_1786109195938.jpg';
 import TOPO_GPS_IMAGE from '../assets/images/topo_gps_navigation_1786109256522.jpg';
 import MOBILE_APP_IMAGE from '../assets/images/kraft_mobile_app_interface_1786109336705.jpg';
-import BRANDENBURG_ROCK_IMAGE from '../assets/images/brandenburg_rock_garden_1786109413223.jpg';
-import SUNSET_BERM_IMAGE from '../assets/images/sunset_berm_carve_1786109500928.jpg';
+import BRANDENBURG_ROCK_IMAGE from '../assets/images/rock_garden_action_1786134285656.jpg';
+import SUNSET_BERM_IMAGE from '../assets/images/sunset_berm_kraft01_1786134543377.jpg';
+import ALPINE_RIDGE_IMAGE from '../assets/images/alpine_ridge_kraft01_1786134651255.jpg';
+import GRUNEWALD_TELEMETRY_IMAGE from '../assets/images/grunewald_kraft01_telemetry_1786134857972.jpg';
 
 export {
   HERO_IMAGE,
@@ -50,7 +52,7 @@ export const TERRAINS_DATA = [
     elevation: '+420m',
     difficulty: 'Moderate Flow',
     description: 'Fast-flowing pine needle singletracks with rapid s-bends and punchy sandy climbs requiring immediate torque vectoring.',
-    image: 'https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&q=80&w=1600',
+    image: GRUNEWALD_TELEMETRY_IMAGE,
     topSpeed: '42 km/h',
     efficiency: '94%'
   },
@@ -61,7 +63,7 @@ export const TERRAINS_DATA = [
     elevation: '+780m',
     difficulty: 'Technical Endurance',
     description: 'Rugged forest fire roads, root clusters, and gravel descents pushing battery thermals and frame rigidity to limits.',
-    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1600',
+    image: BRANDENBURG_ROCK_IMAGE,
     topSpeed: '55 km/h',
     efficiency: '91%'
   },
@@ -72,7 +74,7 @@ export const TERRAINS_DATA = [
     elevation: '+2,100m',
     difficulty: 'Extreme Alpine',
     description: 'Rock gardens, loose slate chutes, and 30%+ vertical inclines where the 90Nm motor and 160mm suspension reign supreme.',
-    image: 'https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&q=80&w=1600',
+    image: ALPINE_RIDGE_IMAGE,
     topSpeed: '68 km/h',
     efficiency: '88%'
   }
@@ -196,7 +198,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     subtitle: 'Testing torque at 2,200m elevation',
     category: 'alpine',
     location: 'Garmisch Alps',
-    imageUrl: 'https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&q=80&w=1600',
+    imageUrl: ALPINE_RIDGE_IMAGE,
     aspectRatio: '1/1'
   },
   {
